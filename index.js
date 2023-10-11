@@ -50,16 +50,6 @@ function generateRace() {
     return race;
 }
 
-// Body Type
-
-const bodyTypeList = ['Muscular', 'Skinny', 'Fat', 'Average', 'Your choice'];
-
-function generateBodyType() {
-    let randomBodyType = Math.floor(Math.random() * 5);
-    const bodyType = bodyTypeList[randomBodyType];
-    return bodyType;
-}
-
 // Class
 
 const classList = ['Soldier', 'Knight', 'Barbarian', 'Paladin', 'Black Mage', 'White Mage', 'Red Mage', 'Rogue', 'Archer', 'Engineer', 'Fighter', 'Summoner', 'Tamer', 'No Class', 'More Than 1 Class'];
@@ -80,7 +70,7 @@ function generateClass() {
             const multiClassType = classList[randomFirstClass] + ' and ' + classList[randomSecondClass];
             return multiClassType;
         }
-        // Condition to 3+ classes
+        // Condition to 3 classes
         if (dice = -3) {
             return 'Your character have 2 classes of your choice';
         }
@@ -112,6 +102,8 @@ function generateClass() {
     return classType;
 }
 
+// Sex
+
 const sexList = ['Male', 'Female'];
 
 function generateSex() {
@@ -121,15 +113,13 @@ function generateSex() {
 }
 
 
-
-
-
 const hairType = generateHairType();
 const hairColor = generateHairColor();
 const eyeColor = generateEyeColor();
 const race = generateRace();
 const classType = generateClass();
-const bodyType = generateBodyType();
 const sex = generateSex();
 
-document.querySelector('.character').innerHTML = ('Hair Type: ' + hairType + ',' + '<br>' + 'Hair Color: ' + hairColor + ',' + '<br>' + 'Eye Color: ' + eyeColor + ',' + '<br>' + 'Race: ' + race + ',' + '<br>' + 'Class: ' + classType + ',' + '<br>' + 'Body Type: ' + bodyType + ',' + '<br>' + 'Sex: ' + sex + '!');
+const character = document.querySelector('.character').innerHTML;
+
+character = ('Hair Type: ' + hairType + ',' + '<br>' + 'Hair Color: ' + hairColor + ',' + '<br>' + 'Eye Color: ' + eyeColor + ',' + '<br>' + 'Race: ' + race + ',' + '<br>' + 'Class: ' + classType + ',' + '<br>' + 'Sex: ' + sex + '!');
