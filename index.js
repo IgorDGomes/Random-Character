@@ -120,6 +120,6 @@ const race = generateRace();
 const classType = generateClass();
 const sex = generateSex();
 
-const character = document.querySelector('.character').innerHTML;
+let character = document.querySelector('.character').innerHTML;
 
 character = ('Hair Type: ' + hairType + ',' + '<br>' + 'Hair Color: ' + hairColor + ',' + '<br>' + 'Eye Color: ' + eyeColor + ',' + '<br>' + 'Race: ' + race + ',' + '<br>' + 'Class: ' + classType + ',' + '<br>' + 'Sex: ' + sex + '!');
