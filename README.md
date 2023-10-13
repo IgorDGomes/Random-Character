@@ -7,6 +7,8 @@ This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made
 - [About](#about)
   - [Overview](#overview)
   - [Built with](#built-with)
+  - [Steps](#steps)
+    - [First Change](#first-change)
 
 ## About
 
@@ -19,3 +21,10 @@ This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made
 - HTML5
 - CSS
 - Javascript
+
+### Steps
+
+#### First Change
+
+- Fixed Javascript file, had an error related to a function.
+- Added a button to refresh the page when clicked.
