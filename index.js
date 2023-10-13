@@ -120,5 +120,10 @@ const race = generateRace();
 const classType = generateClass();
 const sex = generateSex();
 
-
 document.querySelector('.character').innerHTML = ('Hair Type: ' + hairType + ',' + '<br>' + 'Hair Color: ' + hairColor + ',' + '<br>' + 'Eye Color: ' + eyeColor + ',' + '<br>' + 'Race: ' + race + ',' + '<br>' + 'Class: ' + classType + ',' + '<br>' + 'Sex: ' + sex + '!');
+
+// Button Reload Page
+
+document.getElementsByClassName('btn')[0].addEventListener('click', function () {
+    return location.reload();
+})
