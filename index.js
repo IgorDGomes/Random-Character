@@ -59,8 +59,8 @@ function generateClass() {
     const classType = classList[randomClass];
 
     if (classType === 'More Than 1 Class') {
-        let randomDice = Math.floor(Math.random() * 6 + 1);
-        let randomNegativeDice = Math.floor(Math.random() * 5 + 1);
+        let randomDice = Math.floor(Math.random() * 7 + 1);
+        let randomNegativeDice = Math.floor(Math.random() * 6 + 1);
         const dice = randomDice - randomNegativeDice;
 
         // Condition to 2 classes
@@ -70,10 +70,12 @@ function generateClass() {
             const multiClassType = classList[randomFirstClass] + ' and ' + classList[randomSecondClass];
             return multiClassType;
         }
-        // Condition to 3 classes
+        
         if (dice = -3) {
             return 'Your character have 2 classes of your choice';
         }
+        
+        // Condition to 3 classes
         if (dice >= -5) {
             
             const randomClasses = [];
@@ -124,6 +126,6 @@ document.querySelector('.character').innerHTML = ('Hair Type: ' + hairType + ','
 
 // Button Reload Page
 
-document.getElementsByClassName('btn')[0].addEventListener('click', function () {
-    return location.reload();
-})
+document.getElementsByClassName('btn')[0].addEventListener('click', () =>
+    location.reload()
+);
