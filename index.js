@@ -59,8 +59,8 @@ function generateClass() {
     const classType = classList[randomClass];
 
     if (classType === 'More Than 1 Class') {
-        let randomDice = Math.floor(Math.random() * 6 + 1);
-        let randomNegativeDice = Math.floor(Math.random() * 5 + 1);
+        let randomDice = Math.floor(Math.random() * 5 + 1);
+        let randomNegativeDice = Math.floor(Math.random() * 7 + 1);
         const dice = randomDice - randomNegativeDice;
 
         // Condition to 2 classes
