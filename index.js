@@ -59,8 +59,8 @@ function generateClass() {
     const classType = classList[randomClass];
 
     if (classType === 'More Than 1 Class') {
-        let randomDice = Math.floor(Math.random() * 7 + 1);
-        let randomNegativeDice = Math.floor(Math.random() * 6 + 1);
+        let randomDice = Math.floor(Math.random() * 6 + 1);
+        let randomNegativeDice = Math.floor(Math.random() * 5 + 1);
         const dice = randomDice - randomNegativeDice;
 
         // Condition to 2 classes
@@ -71,7 +71,7 @@ function generateClass() {
             return multiClassType;
         }
         
-        if (dice = -3) {
+        if (dice === -3) {
             return 'Your character have 2 classes of your choice';
         }
         
@@ -79,25 +79,25 @@ function generateClass() {
         if (dice >= -5) {
             
             const randomClasses = [];
-            while (randomClasses.lenght < 3) {
+            while (randomClasses.length < 3) {
                 const randomClass = Math.floor(Math.random() * 13);
                 if (!randomClasses.includes(randomClass)) {
                     randomClasses.push(randomClass);                    
                 }
             }
 
-            if (randomClasses === 1) {
+            if (randomClasses.length === 1) {
                 return classList[randomClasses[0]];
             }
 
-            if (randomClasses === 2) {
+            if (randomClasses.length === 2) {
                 return classList[randomClasses[0]] + ' and ' + classList[randomClasses[1]];
             }
 
-            return classList[randomClasses[0]] + ' and ' + classList[randomClasses[1]] + ' and ' + classList[randomClasses[2]];
+            return classList[randomClasses[0]] + ', ' + classList[randomClasses[1]] + ' and ' + classList[randomClasses[2]];
 
         }
-        if (dice = -6) {
+        if (dice === -6) {
             return 'Your character have 3 classes of your choice';
         }
     }
