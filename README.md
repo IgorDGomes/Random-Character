@@ -24,79 +24,134 @@ This project was made to easily create a character for a RPG game, each characte
 <details>
 <summary>Hair Type</summary>
 
+---
+
   - Curly
+
   - Wavy
+
   - Straight
+
   - Bald
 </details>
 
 <details>
 <summary>Hair Color</summary>
 
+---
+
   - Black
+
   - Brown
+
   - Blonde
+
   - White
+
   - Ginger
 </details>
 
 <details>
 <summary>Eye Color</summary>
 
+---
+
   - Black
+
   - Blue
+
   - Green
+
   - Grey
+
   - Purple
+
   - Red
+
   - White
+
   - Brown
+
   - Yellow
+
   - Pink
+
   - Orange
 </details>
 
 <details>
 <summary>Race</summary>
 
+---
+
   - Elf
+
   - Human
+
   - Orc
+
   - Dwarf
+
   - Night Elf
+
   - DragonBorn
+
   - Fairy
+
   - Goblin
+
   - Half *(probability of ~ 9.72%)*
 </details>
 
 <details>
 <summary>Class</summary>
 
+---
+
   - Soldier
+
   - Knight
+
   - Barbarian
+
   - Paladin
+
   - Black Mage
+
   - White Mage
+
   - Red Mage
+
   - Rogue
+
   - Archer
+
   - Engineer
+
   - Fighter
+
   - Summoner
+
   - Tamer
+
   - No Class
+
   - 2 random classes *(probability of ~ 2%)*
+
   - 3 random classes *(probability of ~ 0.8%)*
+
   - 2 classes of your choice *(probability of ~ 0.63%)*
+
   - 3 classes of your choice *(probability of ~ 0.16%)* 
 </details>
 
 <details>
 <summary>Sex</summary>
 
+---
+
   - Male
+
   - Female
 </details>
 
