@@ -136,9 +136,9 @@ This project was made to easily create a character for a RPG game, each characte
 
   - No Class
 
-  - 2 random classes *(probability of ~ 2%)*
+  - 2 random classes *(probability of ~ 3.66%)*
 
-  - 3 random classes *(probability of ~ 0.8%)*
+  - 3 random classes *(probability of ~ 0.48%)*
 
   - 2 classes of your choice *(probability of ~ 0.63%)*
 
