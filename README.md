@@ -14,12 +14,32 @@ This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made
 
 ## Preview
 
+### Desktop
+
+<details>
+<summary>Main page</summary>
+
 [![Desktop Preview](./assets/Desktop_Preview.png)](https://igordgomes.github.io/Random-Character/)
+
+</details>
+
+### Tablet
+
+<details>
+<summary>Main page</summary>
 
 [![Tablet Preview](./assets/Tablet_Preview.png)](https://igordgomes.github.io/Random-Character/)
 
+</details>
+
+### Mobile
+
+<details>
+<summary>Main page</summary>
+
 [![Phone Preview](./assets/Mobile_Preview.png)](https://igordgomes.github.io/Random-Character/)
 
+</details>
 
 ## About
 
