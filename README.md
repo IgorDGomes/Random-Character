@@ -1,18 +1,24 @@
 # Random-Character
 
-This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made as a challenge to try out my understanding about if statement, later on i'll update this repository.
+This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made as a challenge to try out my understanding about if statement using javascript, the backend is being developed with typescript for a better error handling, .
+
 
 ## Table of Contents
 
 - [Preview](#preview)
 - [About](#about)
 - [Built with](#built-with)
+- [Credits](#credits)
 - [More](#more)
 
 
 ## Preview
 
-[![Desktop Preview](./assets/Desktop-Preview.png)](https://igordgomes.github.io/Random-Character/)
+[![Desktop Preview](./assets/Desktop_Preview.png)](https://igordgomes.github.io/Random-Character/)
+
+[![Tablet Preview](./assets/Tablet_Preview.png)](https://igordgomes.github.io/Random-Character/)
+
+[![Phone Preview](./assets/Mobile_Preview.png)](https://igordgomes.github.io/Random-Character/)
 
 
 ## About
@@ -100,7 +106,7 @@ This project was made to easily create a character for a RPG game, each characte
 
   - Goblin
 
-  - Half *(probability of ~ 9.72%)*
+  - Half
 </details>
 
 <details>
@@ -136,13 +142,15 @@ This project was made to easily create a character for a RPG game, each characte
 
   - No Class
 
-  - 2 random classes *(probability of ~ 3.66%)*
+  - 2 random classes
 
-  - 3 random classes *(probability of ~ 0.48%)*
+  - 3 random classes
 
-  - 2 classes of your choice *(probability of ~ 0.63%)*
+  - 2 classes of your choice
 
-  - 3 classes of your choice *(probability of ~ 0.16%)* 
+  - 3 classes of your choice
+
+  - ?
 </details>
 
 <details>
@@ -155,12 +163,19 @@ This project was made to easily create a character for a RPG game, each characte
   - Female
 </details>
 
+
 ## Built with
 
 - HTML
 - CSS
 - Javascript
 
+
+## Credits
+
+[Designer --> Denisa](https://dribbble.com/DenTg)
+
+
 ## More
 
-Later on I will improve the website, making a better design and adding more functionalities. Any suggestions are welcome!
+The backend is being developed.
