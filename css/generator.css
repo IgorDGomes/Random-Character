@@ -125,7 +125,13 @@ label {
     overflow: hidden;
 }
 
-input[type=text] {
+.results {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-family: "Crimson Text", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     flex: 1;
     border: none;
 }

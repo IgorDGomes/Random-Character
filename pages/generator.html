@@ -51,50 +51,50 @@
         <div class="form-container">
             <form id="mainForm">
                 <div>
-                    <label for="hairResult">Hair Type</label>
+                    <label for="hairType">Hair Type</label>
                     <div class="hairSection attributeSection">
-                        <input type="text" name="hairResult" id="hairResult" disabled>
-                        <input type="checkbox" name="hairType" value="hairType" checked>
+                        <p id="hairTypeResult" class="results"></p>
+                        <input id="hairType" type="checkbox" name="hairType" value="selected" checked form="mainForm">
                     </div>
                 </div>
                 
                 <div>
                     <label for="hairColor">Hair Color</label>
                     <div class="attributeSection">
-                        <input type="text" name="hairColor" id="hairColor" disabled>
-                        <input type="checkbox" name="hairColor" value="hairColor" checked>
+                        <p id="hairColorResult" class="results"></p>
+                        <input id="hairColor" type="checkbox" name="hairColor" value="selected" checked form="mainForm">
                     </div>
                 </div>
 
                 <div>
                     <label for="eyeColor">Eye Color</label>
                     <div class="attributeSection">
-                        <input type="text" name="eyeColor" id="eyeColor" disabled>
-                        <input type="checkbox" name="eyeColor" value="eyeColor" checked>
+                        <p id="eyeColorResult" class="results"></p>
+                        <input id="eyeColor" type="checkbox" name="eyeColor" value="selected" checked form="mainForm">
                     </div>
                 </div>
                 
                 <div>
                     <label for="race">Race</label>
                     <div class="attributeSection">
-                        <input type="text" name="race" id="race" disabled>
-                        <input type="checkbox" name="race" value="race" checked>
+                        <p id="raceResult" class="results"></p>
+                        <input id="race" type="checkbox" name="race" value="selected" checked form="mainForm">
                     </div>
                 </div>
                 
                 <div>
-                    <label for="class">Class</label>
+                    <label for="classSelection">Class</label>
                     <div class="attributeSection">
-                        <input type="text" name="class" id="class" disabled>
-                        <input type="checkbox" name="class" value="class" checked>
+                        <p id="classSelectionResult" class="results"></p>
+                        <input id="classSelection" type="checkbox" name="classSelection" value="selected" checked form="mainForm">
                     </div>
                 </div>
                 
                 <div>
                     <label for="sex">Sex</label>
                     <div class="attributeSection">
-                        <input type="text" name="sex" id="sex" disabled>
-                        <input type="checkbox" name="sex" value="sex" checked>
+                        <p id="sexResult" class="results"></p>
+                        <input id="sex" type="checkbox" name="sex" value="selected" checked form="mainForm">
                     </div>
                 </div>
             </form>
@@ -102,6 +102,7 @@
                 type="submit" 
                 form="mainForm"
                 class="btn"
+                id="generateButton"
             >
                 Generate
             </button>
@@ -194,6 +195,29 @@
                 menu.classList.add("hidden");
             }
         })
+
+        // Fetch data from backend
+        document.getElementById("generateButton").addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(document.getElementById("mainForm"));
+
+            fetch("http://127.0.0.1:1436/", {
+                method: "POST",
+                body: new URLSearchParams(formData)
+            })
+            .then(res => res.json())
+            .then(data => {
+                const selectedAttr = ["hairType", "hairColor", "eyeColor", "race", "classSelection", "sex"];
+
+                selectedAttr.forEach((attr) => {
+                    if (data[attr] !== undefined) {
+                        document.getElementById(`${attr}Result`).innerHTML = data[attr];
+                    }
+                })
+            })
+            .catch(err => console.error("Error: ", err));
+        });
     </script>
 </body>
 </html>

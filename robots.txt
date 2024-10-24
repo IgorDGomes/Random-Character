@@ -1,0 +1,5 @@
+Sitemap: https://igordgomes.github.io/Random-Character/
+Sitemap: https://igordgomes.github.io/Random-Character/pages/generator.html
+
+User-agent: *
+Allow: /

@@ -1,6 +1,6 @@
 # Random-Character
 
-This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made as a challenge to try out my understanding about if statement using javascript, the backend is being developed with typescript for a better error handling, .
+This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made as a challenge to try out my understanding about if statement using javascript, the backend is developed with typescript for a better error handling and express.
 
 
 ## Table of Contents
@@ -8,8 +8,8 @@ This [Random-Character](https://github.com/IgorDGomes/Random-Character) was made
 - [Preview](#preview)
 - [About](#about)
 - [Built with](#built-with)
+- [API](#api)
 - [Credits](#credits)
-- [More](#more)
 
 
 ## Preview
@@ -191,11 +191,45 @@ This project was made to easily create a character for a RPG game, each characte
 - Javascript
 
 
+## API
+
+Go to the server folder and install dependencies, run `npm run dev` on the terminal, and it will be available for use.
+
+`Server runs on port 127.0.0.1:1436 with CORS enabled`
+
+### Tech
+
+- Express
+- Typescript
+
+### Example:
+
+**Body**
+
+| Key                  | Value         
+|----------------------|----------------------
+| `hairType`           | `selected`
+| `hairColor`          | `selected`
+| `eyeColor`           | `selected`
+| `race`               | `selected`
+| `classSelection`     | `selected`
+| `sex`                | `selected`
+
+
+**RESPONSE**
+
+```json
+{
+  "hairType": "Bald",
+  "hairColor": "Ginger",
+  "eyeColor": "Red",
+  "race": "Dwarf",
+  "classSelection": "Barbarian",
+  "sex": "Male"
+}
+```
+
+
 ## Credits
 
 [Designer --> Denisa](https://dribbble.com/DenTg)
-
-
-## More
-
-The backend is being developed.
