@@ -130,6 +130,6 @@ app.post("/", (req: Request, res: Response) => {
     }
 });
 
-app.listen(1436, () => {
+app.listen(port, () => {
     console.log("Server running on port 1436! \nCORS enabled");
 });
