@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://igordgomes.github.io/",
+    origin: "https://igordgomes.github.io",
     methods: "POST",
 }));
 
